@@ -72,5 +72,8 @@ alias gup='git fetch && git rebase'
 alias gus='git reset HEAD'
 alias gw='git whatchanged'
 
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
