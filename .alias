@@ -13,6 +13,23 @@ alias rd='rmdir'
 alias sl='ls'
 alias tree='find . -print | sed -e '\''s;[^/]*/;|____;g;s;____|; |;g'\'''
 alias v='/usr/bin/vim'
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ~='cd' # `cd` is probably faster to type though
+alias -- -='cd -'
+
+# Shortcuts
+alias d='cd ~/Documents/Dropbox'
+alias dl='cd ~/Downloads'
+alias dt='cd ~/Desktop'
+alias ws='cd  ~/Workspace'
+alias h='history'
+
+#GIT
 alias g='git'
 alias ga='git add'
 alias gall='git add -A'
@@ -62,5 +79,8 @@ alias gtls='git tag -l | sort -V'
 alias gup='git fetch && git rebase'
 alias gus='git reset HEAD'
 alias gw='git whatchanged'
+
+
+#YAOURT
 alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
 
