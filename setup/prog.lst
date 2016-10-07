@@ -4,6 +4,8 @@ tig
 docker
 jdk
 maven
+intellij-idea-ce
+android-tools
 virtualbox
 virtualbox-ext-oracle
 teamviewer
