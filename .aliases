@@ -1,7 +1,7 @@
 alias c='clear'
+alias q='exit'
 alias cls='clear'
 alias h='history'
-alias irc='irssi'
 alias k='clear'
 alias l='less'
 alias l1='ls -1'
@@ -10,7 +10,31 @@ alias q='exit'
 alias rd='rmdir'
 alias sl='ls'
 alias tree='find . -print | sed -e '\''s;[^/]*/;|____;g;s;____|; |;g'\'''
+alias vi='/usr/bin/vim'
 alias v='/usr/bin/vim'
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ~='cd' # `cd` is probably faster to type though
+alias -- -='cd -'
+
+# Listing of Files
+alias ld='ls -ld'          # Show info about the directory
+alias lla='ls -lAF'        # Show hidden all files
+alias ll='ls -lF'          # Show long file information
+alias la='ls -AF'          # Show hidden files
+alias lx='ls -lXB'         # Sort by extension
+alias lk='ls -lSr'         # Sort by size, biggest last
+alias lc='ls -ltcr'        # Sort by and show change time, most recent last
+alias lu='ls -ltur'        # Sort by and show access time, most recent last
+alias lt='ls -ltr'         # Sort by date, most recent last
+alias lr='ls -lR' 	   # Recursive ls
+alias lta='ls -ltra'       # Sort by date, most recent last with hidden files
+
+#GIT
 alias g='git'
 alias ga='git add'
 alias gall='git add -A'
@@ -60,4 +84,9 @@ alias gtls='git tag -l | sort -V'
 alias gup='git fetch && git rebase'
 alias gus='git reset HEAD'
 alias gw='git whatchanged'
-alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local

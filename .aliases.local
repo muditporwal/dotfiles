@@ -1,0 +1,9 @@
+# Shortcuts
+alias d='cd ~/Documents/Dropbox'
+alias dl='cd ~/Downloads'
+alias dt='cd ~/Desktop'
+alias ws='cd ~/Workspace'
+
+#YAOURT
+alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
+

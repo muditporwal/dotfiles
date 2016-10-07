@@ -1,29 +1,40 @@
+#
+# ~/.bashrc
+#
 
-# Path to the bash it configuration
-export BASH_IT="/home/mudit/.bash_it"
+[[ $- != *i* ]] && return
 
-# Lock and Load a custom theme file
-# location /.bash_it/themes/
-#export BASH_IT_THEME='bobby'
+colors() {
+	local fgc bgc vals seq0
 
-# Your place for hosting Git repos. I use this for private repos.
-#export GIT_HOSTING='git@git.domain.com'
+	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
+	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
+	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
+	printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
 
-# Don't check mail when opening terminal.
-#unset MAILCHECK
+	# foreground colors
+	for fgc in {30..37}; do
+		# background colors
+		for bgc in {40..47}; do
+			fgc=${fgc#37} # white
+			bgc=${bgc#40} # black
 
-# Change this to your console based IRC client of choice.
-#export IRC_CLIENT='irssi'
+			vals="${fgc:+$fgc;}${bgc}"
+			vals=${vals%%;}
 
-# Set this to the command you use for todo.txt-cli
-#export TODO="t"
+			seq0="${vals:+\e[${vals}m}"
+			printf "  %-9s" "${seq0:-(default)}"
+			printf " ${seq0}TEXT\e[m"
+			printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
+		done
+		echo; echo
+	done
+}
 
-# Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
+[[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
+[[ -f ~/.aliases ]] && . ~/.aliases
 
-# Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/xvzf/vcprompt
-#export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
-# Load Bash It
-source $BASH_IT/bash_it.sh
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
+
