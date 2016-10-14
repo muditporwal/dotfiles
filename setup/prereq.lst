@@ -1,0 +1,5 @@
+pacli
+vim
+git
+cower-git (in case pacaur still has issues with cower installation)
+pacaur-git

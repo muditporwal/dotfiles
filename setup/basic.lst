@@ -1,6 +1,4 @@
-pacli
-cower-git
-pacaur-git
+thermald
 bleachbit
 dropbox
 firefox
@@ -12,3 +10,4 @@ vlc-nightly
 zsh
 zsh-completions
 popcorntime-ce
+android-tools

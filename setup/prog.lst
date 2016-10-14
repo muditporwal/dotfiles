@@ -1,12 +1,8 @@
-thermald
-vim
-git
 tig
 docker
 jdk
 maven
-intellij-idea-ue-eap
-android-tools
 virtualbox
 virtualbox-ext-oracle
 teamviewer
+intellij-idea-ce-eap
