@@ -5,7 +5,7 @@ tig
 docker
 jdk
 maven
-intellij-idea-ce
+intellij-idea-ue-eap
 android-tools
 virtualbox
 virtualbox-ext-oracle

@@ -1,4 +1,6 @@
 pacli
+cower-git
+pacaur-git
 bleachbit
 dropbox
 firefox
@@ -6,7 +8,7 @@ google-chrome
 preload
 prezto-git
 qbittorrent
-vlc
+vlc-nightly
 zsh
 zsh-completions
 popcorntime-ce
