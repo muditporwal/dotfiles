@@ -2,7 +2,7 @@
 
 echo -e "\nUpdating System";
 sleep 0.5;
-sudo pacaur -Syu;
+pacaur -Syu;
 
 
 _update="pacaur -S --needed --noedit --noconfirm";

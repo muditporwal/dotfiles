@@ -2,7 +2,7 @@
 alias d='cd ~/Documents/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias ws='cd ~/Workspace'
+alias ws='cd ~/Media/Prog/git'
 
 #YAOURT
 alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
