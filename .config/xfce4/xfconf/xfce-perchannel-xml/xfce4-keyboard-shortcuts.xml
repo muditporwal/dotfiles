@@ -44,6 +44,7 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;Delete" type="string" value="variety -t"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="string" value="variety -n"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="string" value="variety -p"/>
+      <property name="&lt;Alt&gt;&lt;Super&gt;f" type="string" value="variety -f"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

@@ -10,4 +10,4 @@ alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
 #CHROME KEYRING
 alias rmkeyring='sudo mv /usr/bin/gnome-keyring-daemon /usr/bin/gnome-keyring-daemon-old ; sudo killall gnome-keyring-daemon'
 
-alias resizetmp='su -c "mount -o remount,size=2560m /tmp"'
+alias resizetmp='su -c "mount -o remount,size=6144m /tmp"'
