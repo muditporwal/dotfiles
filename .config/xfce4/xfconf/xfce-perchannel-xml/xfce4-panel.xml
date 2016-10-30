@@ -23,6 +23,7 @@
       <property name="size" type="uint" value="27"/>
       <property name="mode" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
