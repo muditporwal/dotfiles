@@ -90,3 +90,4 @@ alias reload="exec $SHELL -l"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
+[[ -f ~/.aliases.docker ]] && source ~/.aliases.docker
