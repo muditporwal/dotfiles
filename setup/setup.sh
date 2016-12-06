@@ -19,4 +19,5 @@ echo -e "\n\nChange Default Shell to Zsh";
 sleep 0.5; 
 chsh -s /usr/bin/zsh;
 fi
+sh docker.sh
 echo -e "Set Default Java using -- archlinux-java status ; archlinux-java set <JAVA_ENV_NAME>"
