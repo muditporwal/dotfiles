@@ -1,0 +1,6 @@
+alias gsr='git submodule update --recursive --remote'
+alias gpxu='git config --global --unset http.proxy'
+alias gpxs='git config --global http.proxy http://xyz.com:8080'
+alias greset='git checkout .;git reset'
+alias gclean='git reset --hard HEAD;git clean -f;git pull'
+alias gsa='git submodule add -f -b master'
