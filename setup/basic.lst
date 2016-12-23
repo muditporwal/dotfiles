@@ -9,7 +9,7 @@ google-chrome
 preload
 prezto-git
 qbittorrent
-vlc-nightly
+vlc
 zsh
 zsh-completions
 popcorntime-ce
@@ -18,3 +18,4 @@ variety
 xournal
 pdfshuffler-git
 linuxdcpp
+
