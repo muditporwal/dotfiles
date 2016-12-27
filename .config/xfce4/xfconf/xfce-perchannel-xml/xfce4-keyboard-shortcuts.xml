@@ -45,6 +45,8 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="string" value="variety -n"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="string" value="variety -p"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;f" type="string" value="variety -f"/>
+      <property name="&lt;Super&gt;f" type="string" value="thunar"/>
+      <property name="&lt;Super&gt;w" type="string" value="google-chrome-stable"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
