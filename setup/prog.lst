@@ -9,3 +9,6 @@ intellij-idea-ce-eap
 sublime-text-dev
 vagrant
 jdk-devel
+postgresql
+rabbitmq
+elasticsearch
