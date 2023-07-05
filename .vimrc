@@ -1,18 +1,17 @@
 " Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
-Plug 'tpope/vim-sensible'
-Plug 'gruvbox-community/gruvbox'
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-" List ends here. Plugins become visible to Vim after this call.
-call plug#end()
+# call plug#begin('~/.vim/plugged')
+# " Declare the list of plugins.
+# Plug 'tpope/vim-sensible'
+# Plug 'gruvbox-community/gruvbox'
+# Plug 'junegunn/seoul256.vim'
+# Plug 'junegunn/limelight.vim'
+# Plug 'junegunn/goyo.vim'
+# Plug 'itchyny/lightline.vim'
+# Plug 'godlygeek/tabular'
+# Plug 'plasticboy/vim-markdown'
+# Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+# " List ends here. Plugins become visible to Vim after this call.
+# call plug#end()
 
 
 """"""""""""""""""""""""""""""""""""""""
