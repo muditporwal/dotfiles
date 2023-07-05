@@ -1,9 +1,1 @@
-# Source Prezto.
- if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-   fi
-
-[[ -f ~/.aliases ]] && . ~/.aliases
-
-# 10 second wait if you do something that will delete everything. 
-setopt RM_STAR_WAIT
+/home/mudit/.zprezto/runcoms/zshrc
