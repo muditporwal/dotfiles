@@ -42,3 +42,4 @@ alias reload="exec $SHELL -l"
 [[ -f ~/.aliases.git ]] && source ~/.aliases.git
 [[ -f ~/.aliases.docker ]] && source ~/.aliases.docker
 [[ -f ~/.aliases.vagrant ]] && source ~/.aliases.vagrant
+[[ -f ~/.aliases.exercism ]] && source ~/.aliases.exercism
