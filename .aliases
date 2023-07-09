@@ -10,8 +10,7 @@ alias q='exit'
 alias rd='rmdir'
 alias sl='ls'
 alias tree='find . -print | sed -e '\''s;[^/]*/;|____;g;s;____|; |;g'\'''
-alias vi='/usr/bin/vim'
-alias v='/usr/bin/vim'
+alias v='/usr/bin/vi'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..='cd ..'
