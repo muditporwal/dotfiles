@@ -1,5 +1,6 @@
 [user]
 	name = Mudit Porwal
+	email = 9289168+muditporwal@users.noreply.github.com
 [core]
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
