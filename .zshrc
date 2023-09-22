@@ -1,1 +1,0 @@
-/home/mudit/.zprezto/runcoms/zshrc
