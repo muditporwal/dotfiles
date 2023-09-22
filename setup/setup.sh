@@ -1,9 +1,8 @@
 #!/bin/bash
-sudo su -
-echo "Ranking server list for optimal performance"
-pacman-mirrors --fasttrack
-echo "Completed ranking server list for optimal performance"
-echo "-----------------------------------------------------------------------------"
+# echo "Ranking server list for optimal performance"
+# pacman-mirrors --fasttrack
+# echo "Completed ranking server list for optimal performance"
+# echo "-----------------------------------------------------------------------------"
 echo "Updating packages before install"
 pacman -Syyu
 echo "Completed updating packages before install"
