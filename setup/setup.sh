@@ -1,24 +1,24 @@
 #!/bin/bash
 
-echo -e "\nUpdating System";
-sleep 0.5;
-pacaur -Syu;
+if [ ! "`whoami`" = "root" ]
+then
+    echo "Use sudo to run this script"
+    exit 1
+fi
 
+
+echo "Ranking server list for optimal performance"
+pacman-mirrors --fasttrack
+
+echo "Updating packages before install"
+pacman -Syyu
 
 _update="pacaur -S --needed --noedit --noconfirm";
 
 for x in $(cat ./basic.lst) $(cat ./prog.lst) ; 
 	do	
 				$_update $x;
+				[[ -f ./tools/$x-setup.sh ]] && sh ./tools/$x-setup.sh
 	done
 
-
-
-if [ $SHELL != '/usr/bin/zsh' ]; then
-echo -e "\n\nChange Default Shell to Zsh";
-sleep 0.5; 
-chsh -s /usr/bin/zsh;
-fi
-#Uncomment to perform Docker Setup for Docker Deamon
-#sh docker.sh
-echo -e "Set Default Java using -- archlinux-java status ; archlinux-java set <JAVA_ENV_NAME>"
+sh ./tools/zprezto-setup.sh
