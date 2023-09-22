@@ -1,0 +1,5 @@
+[WFClient]
+Version=2
+HttpBrowserAddress=https://avaremotecit.cloud.com/
+BrowserProtocol=HTTPonTCP
+BrowserCommand=/usr/bin/firefox

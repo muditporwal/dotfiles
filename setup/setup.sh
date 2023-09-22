@@ -19,9 +19,15 @@ _update="pacaur -S --needed --noedit --noconfirm";
 
 echo "Installating the tools in the basic and programming list files"
 for x in $(cat ./basic.lst) $(cat ./prog.lst) ; 
-	do	
-				$_update $x;
-				[[ -f ./tools/$x-setup.sh ]] && sh ./tools/$x-setup.sh
+	do
+	    # Check if the line starts with "#" and skip it if it does
+	    if [[ "$x" != \#* ]]; then
+    	    $_update "$x"
+			# Check if there is a corresponding setup script run that after installation of the tool
+        	if [[ -f ./tools/$x-setup.sh ]]; then
+            	sh ./tools/$x-setup.sh
+        	fi
+    	fi
 	done
 
 echo "Completed installating the tools in the basic and programming list files"
@@ -33,3 +39,6 @@ sh ./tools/dotfiles-setup.sh
 
 # Downloads Zprezto and uses the .zprezto config present in the repo
 sh ./tools/zprezto-setup.sh
+
+# Setup Work Tools
+sh ./work/setup-work.sh

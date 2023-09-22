@@ -5,7 +5,8 @@ jdk
 maven
 intellij-idea-ce-eap
 dbeaver
-
+#Citrix - ICA Client
+icaclient
 #docker
 #docker-compose
 #jdk-devel
