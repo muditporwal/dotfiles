@@ -5,6 +5,8 @@ jdk
 maven
 intellij-idea-ce-eap
 dbeaver
+npm
+exercism-bin
 #Citrix - ICA Client
 icaclient
 #docker

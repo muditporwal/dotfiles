@@ -22,9 +22,11 @@ for x in $(cat ./basic.lst) $(cat ./prog.lst) ;
 	do
 	    # Check if the line starts with "#" and skip it if it does
 	    if [[ "$x" != \#* ]]; then
-    	    $_update "$x"
+    	    echo "-- installing $x"
+			$_update "$x"
 			# Check if there is a corresponding setup script run that after installation of the tool
         	if [[ -f ./tools/$x-setup.sh ]]; then
+				echo "---- configuring $x"
             	sh ./tools/$x-setup.sh
         	fi
     	fi
