@@ -42,6 +42,8 @@ for x in $(cat ./basic.lst) $(cat ./prog.lst); do
             # Example: To exit the script immediately on the first failure:
             # exit 1
         fi
+    else
+    echo "Skipping $x"
     fi
 done
 
@@ -50,10 +52,10 @@ echo "--------------------------------------------------------------------------
 sleep 1
 
 # Setup Bare Git Repo with alias for dotfiles
-sh ./tools/dotfiles-setup.sh
+# sh ./tools/dotfiles-setup.sh
 
 # Downloads Zprezto and uses the .zprezto config present in the repo
-sh ./tools/zprezto-setup.sh
+# sh ./tools/zprezto-setup.sh
 
 # Setup Work Tools
-sh ./work/setup-work.sh
+# sh ./work/setup-work.sh
