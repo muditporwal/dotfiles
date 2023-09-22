@@ -1,7 +1,9 @@
 #!bin/bash
 
-echo 'Configuring teamviewer'
+echo "Configuring teamviewer"
 
 systemctl enable teamviewerd
 systemctl stop teamviewerd
 systemctl start teamviewerd
+
+echo "Completed configuring teamviewer"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Setting Up Docker"
 
@@ -10,4 +10,4 @@ sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 
-echo "Docker Setup Completed. Please restart before using"
+echo "Completed setting up Docker. #### Please restart before using ####"
