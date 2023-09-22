@@ -15,7 +15,7 @@ echo "Updating packages before install"
 pacman -Syyu
 echo "Completed updating packages before install"
 echo "-----------------------------------------------------------------------------"
-_update="pacaur -S --needed --noedit --noconfirm";
+_update="pacaur -Sy --noconfirm";
 
 echo "Installating the tools in the basic and programming list files"
 for x in $(cat ./basic.lst) $(cat ./prog.lst) ; 
