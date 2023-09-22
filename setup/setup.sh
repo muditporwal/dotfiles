@@ -4,20 +4,21 @@
 # echo "Completed ranking server list for optimal performance"
 # echo "-----------------------------------------------------------------------------"
 echo "Updating packages before install"
-pacman -Syyu
+sudo pacman -Syyu 1>/dev/null 2>&1
 echo "Completed updating packages before install"
 echo "-----------------------------------------------------------------------------"
 
-pacman -Sy --noconfirm yay
-_update="yay -S --noconfirm";
+sudo pacman -Sy --noconfirm yay 1>/dev/null 2>&1;
+_update="yay -S --needed --noconfirm";
 
 # Function to install a package and check for success
 install_package() {
     local package="$1"
-    echo "-- installing $package"
     if $_update "$package"; then
-        return 0  # Success
+    	echo "Installed $package"
+        return 0  
     else
+    	echo "Failed Installing $package"
         return 1  # Failure
     fi
 }
@@ -31,11 +32,10 @@ for x in $(cat ./basic.lst) $(cat ./prog.lst); do
         if install_package "$x"; then
             # Check if there is a corresponding setup script and run it after installation of the tool
             if [[ -f "./tools/$x-setup.sh" ]]; then
-                echo "---- configuring $x"
+                echo "Configuring $x"
                 sh "./tools/$x-setup.sh"
             fi
         else
-            echo "#### ERROR Installing $x"
             # You can choose to continue or exit on error, depending on your preference.
             # Example: To continue installing other packages even if one fails:
              continue

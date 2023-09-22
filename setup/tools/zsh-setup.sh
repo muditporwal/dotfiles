@@ -1,4 +1,5 @@
 #!bin/bash
+
 if [ $SHELL != '/usr/bin/zsh' ]; then
 echo -e "\n\nChanging Default Shell to Zsh";
 sleep 0.5; 
