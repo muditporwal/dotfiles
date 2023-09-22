@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -s "./tools/conf/flameshot" ~/flameshot
+ln -sf "./tools/conf/flameshot" "~/flameshot"
 
 mkdir -p "~/.config/flameshot"
-ln -s "./tools/conf/flameshot.ini" ~/.config/flameshot/flameshot.ini
+ln -sf "./tools/conf/flameshot.ini" "~/.config/flameshot/flameshot.ini"

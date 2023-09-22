@@ -1,4 +1,5 @@
 #!/bin/bash
 
 mkdir -p "~/.config/variety"
-ln -s "./tools/conf/variety.conf" ~/.config/variety/variety.conf
+rm -f "~/.config/variety/variety.conf"
+ln -sf "./tools/conf/variety.conf" "~/.config/variety/variety.conf"
