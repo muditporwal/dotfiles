@@ -15,7 +15,7 @@
   
 - Clone the dotfiles repo to a bare repo under `~/.cfg`
 
-  `git clone --bare <git-repo-url> $HOME/.cfg`
+  `git clone --bare https://github.com/muditporwal/dotfiles.git $HOME/.cfg`
 
 - Use username and Access Token as Password for logging into git
 
