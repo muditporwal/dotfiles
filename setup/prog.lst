@@ -1,17 +1,16 @@
 android-tool
 git
 tig
-jdk
+jdk-temurin
 maven
 intellij-idea-ce-eap
 dbeaver
 npm
 exercism-bin
-#Citrix - ICA Client
+#Citrix~ ICAClient
 icaclient
 #docker
 #docker-compose
-#jdk-devel
 #postgresql
 #postgresql-libs
 #redis
