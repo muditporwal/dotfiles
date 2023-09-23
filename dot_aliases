@@ -7,7 +7,4 @@ alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Include custom aliases
 [[ -f ~/aliases/.aliases.local ]]       &&        source ~/aliases/.aliases.local
 [[ -f ~/aliases/.aliases.navigation ]]  &&   source ~/aliases/.aliases.navigation
-[[ -f ~/aliases/.aliases.git ]]         &&          source ~/aliases/.aliases.git
-[[ -f ~/aliases/.aliases.docker ]]      &&       source ~/aliases/.aliases.docker
-[[ -f ~/aliases/.aliases.vagrant ]]     &&      source ~/aliases/.aliases.vagrant
 [[ -f ~/aliases/.aliases.exercism ]]    &&     source ~/aliases/.aliases.exercism
