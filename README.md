@@ -1,10 +1,11 @@
 # Instructions for setting up your environment
 
 ## Clean Installation
-- Make the config directory
+- Download `chezmoi` on your machine.
+- Run `chezmoi init muditporwal` to setup.
 
-  `~/.cfg`
 
+## Old Instructions
 - Add a personal token that expires in 1 day
   
   ```text
