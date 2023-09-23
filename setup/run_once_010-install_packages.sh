@@ -1,7 +1,5 @@
 #!/bin/bash
-# echo "Ranking server list for optimal performance"
-# pacman-mirrors --fasttrack
-# echo "Completed ranking server list for optimal performance"
+
 # echo "-----------------------------------------------------------------------------"
 echo "Updating packages before install"
 sudo pacman -Syyu 1>/dev/null 2>&1
@@ -22,7 +20,6 @@ install_package() {
         return 1  # Failure
     fi
 }
-
 
 
 echo "Installating the tools in the basic and programming list files"
