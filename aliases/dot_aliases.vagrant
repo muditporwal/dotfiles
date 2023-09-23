@@ -1,0 +1,3 @@
+alias vlist='VBoxManage list runningvms'
+alias vps='ps -ef|grep -v grep|grep vagrant'
+alias vmanage='VBoxManage controlvm '
