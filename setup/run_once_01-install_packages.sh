@@ -50,12 +50,3 @@ done
 echo "Completed installating the tools in the basic and programming list files"
 echo "-----------------------------------------------------------------------------"
 sleep 1
-
-# Setup Bare Git Repo with alias for dotfiles
-# sh ./tools/dotfiles-setup.sh
-
-# Downloads Zprezto and uses the .zprezto config present in the repo
-# sh ./tools/zprezto-setup.sh
-
-# Setup Work Tools
-# sh ./work/setup-work.sh
