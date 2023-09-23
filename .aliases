@@ -1,8 +1,9 @@
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
 # DotFiles Setup
 alias dotf='chezmoi'
+# DotFiles Repository
+alias dotfiles='/home/mudit/.local/share/chezmoi'
 
 # Include custom aliases
 [[ -f ~/aliases/.aliases.local ]]       &&        source ~/aliases/.aliases.local
