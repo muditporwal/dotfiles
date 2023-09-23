@@ -23,10 +23,22 @@
 
   `alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
 
+- Ensure you add the command to not show untracked files
+  
+  `dotf config status.showUntrackedFiles no`
+
+- Check Status of the the work-tree before checkout
+
+  `dotf status`
+
 - Checkout the actual content from the bare repository
 
   `dotf checkout`
 
+- Check Status of the the work-tree after checkout
+
+  `dotf status`
+  
 
 
 ## Troubleshooting
