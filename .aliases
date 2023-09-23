@@ -2,7 +2,7 @@
 alias reload="exec $SHELL -l"
 
 # DotFiles Setup
-alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotf='chezmoi'
 
 # Include custom aliases
 [[ -f ~/aliases/.aliases.local ]]       &&        source ~/aliases/.aliases.local
