@@ -1,4 +1,5 @@
 #!bin/bash
 
+current_dir=$(pwd)
 mkdir -p "$HOME/exercism"
-ln -s "./tools/conf/exercism.sh" ~/exercism/exercism.sh
+ln -sf "$current_dir/tools/conf/exercism.sh" "$HOME/exercism/exercism.sh"
