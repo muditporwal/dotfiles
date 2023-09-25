@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # echo "-----------------------------------------------------------------------------"
+cd setup
 echo "Updating packages before install"
 sudo pacman -Syyu 1>/dev/null 2>&1
 echo "Completed updating packages before install"
@@ -47,3 +48,4 @@ done
 echo "Completed installating the tools in the basic and programming list files"
 echo "-----------------------------------------------------------------------------"
 sleep 1
+cd -
