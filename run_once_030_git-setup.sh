@@ -1,5 +1,8 @@
 #!bin/bash
+
+echo -e "Installing XClip for GitSSH";
 sudo pacman -Sy --noconfirm xclip 1>/dev/null 2>&1;
+echo -e "Completed installing XClip for GitSSH";
 
 echo "Generating SSH key to github"
 ssh-keygen -t rsa -b 4096 -C mudit.porwal@gmail.com
