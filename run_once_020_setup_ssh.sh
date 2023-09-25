@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo -e "Installing XClip for GitSSH";
 sudo pacman -Sy --noconfirm xclip 1>/dev/null 2>&1;
