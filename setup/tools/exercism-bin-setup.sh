@@ -1,4 +1,4 @@
 #!bin/bash
 
-mkdir -p "~/exercism"
+mkdir -p "$HOME/exercism"
 ln -s "./tools/conf/exercism.sh" ~/exercism/exercism.sh
