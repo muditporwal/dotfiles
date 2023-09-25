@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Sy --noconfirm zsh 1>/dev/null 2>&1;
+
 if [ $SHELL != '/usr/bin/zsh' ]; then
 echo -e "Changing Default Shell to Zsh";
 sleep 0.5; 
