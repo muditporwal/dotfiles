@@ -46,6 +46,11 @@
 - Run `chezmoi init muditporwal` to setup.
 
 
-## Setting up Git in VSCode
+
+## Setting up VSCode
+- Download using link `https://az764295.vo.msecnd.net/stable/6c3e3dba23e8fadc360aed75ce363ba185c49794/code-stable-x64-1691619534.tar.gz`
+- Extract and use code
+
+### Setting up Git in VSCode
 - Check if the SSH agent is running by using the `ssh-add -l` command. 
 - If it's not running, you can start it with `ssh-agent` and add your SSH key using `ssh-add`.
