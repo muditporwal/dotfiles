@@ -15,7 +15,7 @@ if [ -f "$registries_conf" ]; then
 
   # Refresh the Podman image cache
   echo "Refreshing Podman image cache..."
-  sudo podman system reset --prune
+  sudo podman system reset --force
   echo "Podman configuration has been updated."
 else
   echo "Error: $registries_conf not found. Please make sure Podman is installed."
