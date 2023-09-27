@@ -3,12 +3,6 @@
 # Getting to the context directory
 cd ~/.local/share/chezmoi/setup
 
-# echo "-----------------------------------------------------------------------------"
-echo "Updating packages before install"
-sudo pacman -Syyu 1>/dev/null 2>&1
-echo "Completed updating packages before install"
-echo "-----------------------------------------------------------------------------"
-
 sudo pacman -Sy --noconfirm yay 1>/dev/null 2>&1;
 _update="yay -S --needed --noconfirm";
 
