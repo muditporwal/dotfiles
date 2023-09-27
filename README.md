@@ -38,7 +38,14 @@
 - Since the xfce power manager uses UPower in the background, setting this should suffice
 - Update the Ignore lid to true `IgnoreLid=true`  in `/etc/UPower/UPower.conf`
 
+### Setup Automatic Time (To avoid issues with Certificate Validation)
+- Click start-> Manjaro Settings Manager -> Time and Date -> Set Time and Date automatically
+
 ## Clean Installation
 - Download `chezmoi` on your machine.
 - Run `chezmoi init muditporwal` to setup.
 
+
+## Setting up Git in VSCode
+- Check if the SSH agent is running by using the `ssh-add -l` command. 
+- If it's not running, you can start it with `ssh-agent` and add your SSH key using `ssh-add`.
