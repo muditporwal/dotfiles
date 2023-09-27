@@ -10,6 +10,14 @@ npm
 exercism-bin
 #Citrix-ICAClient
 icaclient
+
+
+podman
+podman-compose
+podman-dnsname
+podman-docker
+cockpit-podman
+buildah
 #docker
 #docker-compose
 #postgresql
