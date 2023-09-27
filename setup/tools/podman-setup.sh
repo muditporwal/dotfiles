@@ -10,15 +10,18 @@ registries_conf="/etc/containers/registries.conf"
 if [ -f "$registries_conf" ]; then
   # Add registries to registries.conf
   for registry in "${registries[@]}"; do
-    grep -q "$registry" "$registries_conf" || echo "registries = append_dict(source_dict(), ['$registry'])" | sudo tee -a "$registries_conf"
+    grep -q "$registry" "$registries_conf" || echo "registries = append(source_dict(), '$registry')" | sudo tee -a "$registries_conf"
   done
 
+  echo "Podman configuration has been updated."
   # Refresh the Podman image cache
   echo "Refreshing Podman image cache..."
-  sudo podman system reset --force
+  sudo podman system reset
   echo "Podman configuration has been updated."
 else
   echo "Error: $registries_conf not found. Please make sure Podman is installed."
   exit 1
 fi
+
+
 
