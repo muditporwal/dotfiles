@@ -30,4 +30,5 @@ sudo systemctl restart festival speech-dispatcherd
 #Linking user configuration instead to the git repo
 current_dir=$(pwd)
 mkdir -p "$HOME/.config/speech-dispatcher"
+mv "$HOME/.config/speech-dispatcher/speechd.conf" "$HOME/.config/speech-dispatcher/speechd.conf.bak"
 ln -sf "$current_dir/tools/conf/speechd.conf" "$HOME/.config/speech-dispatcher/speechd.conf"
