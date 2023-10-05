@@ -8,3 +8,4 @@ alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 [[ -f ~/aliases/.aliases.local ]]       &&        source ~/aliases/.aliases.local
 [[ -f ~/aliases/.aliases.navigation ]]  &&   source ~/aliases/.aliases.navigation
 [[ -f ~/aliases/.aliases.exercism ]]    &&     source ~/aliases/.aliases.exercism
+[[ -f ~/aliases/.localkeys ]]    &&     source ~/aliases/.localkeys
