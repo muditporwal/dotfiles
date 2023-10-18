@@ -2,8 +2,10 @@
     "workbench.colorTheme": "Default Dark Modern",
     "window.menuBarVisibility": "toggle",
     "git.autofetch": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
     "git.enableSmartCommit": true,
-    "redhat.telemetry.enabled": true,
     "git.autoStash": true,
     "git.autoRepositoryDetection": "subFolders"
 }
