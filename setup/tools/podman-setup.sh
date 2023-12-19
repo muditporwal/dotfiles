@@ -16,7 +16,7 @@ if [ -f "$registries_conf" ]; then
  else
   # Create the registries.conf file with the [registries.search] section and the registries entry
   combined_registries=$(printf " '%s' ," "${registries[@]}")
-  combined_registries="${combined_registries%,}]"
+  combined_registries="${combined_registries%,}"
   combined_registries="registries= [$combined_registries]"
   echo -e "[registries.search]\n$combined_registries" | sudo tee -a "$registries_conf"
   echo "Podman configuration has been created and updated."
