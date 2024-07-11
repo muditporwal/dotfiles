@@ -7,5 +7,9 @@
     },
     "git.enableSmartCommit": true,
     "git.autoStash": true,
-    "git.autoRepositoryDetection": "subFolders"
+    "git.autoRepositoryDetection": "subFolders",
+    "tabnine.experimentalAutoImports": true,
+    "git.openRepositoryInParentFolders": "never",
+    "notebook.lineNumbers": "on",
+    "redhat.telemetry.enabled": true
 }
