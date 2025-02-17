@@ -6,12 +6,13 @@ git
 tig
 jdk-temurin
 maven
-intellij-idea-ce-eap
+jetbrains-toolbox
+#intellij-idea-ce-eap
 dbeaver
 npm
 exercism-bin
 #Citrix-ICAClient
-icaclient
+#icaclient
 podman
 podman-compose
 podman-dnsname
