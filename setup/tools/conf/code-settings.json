@@ -11,5 +11,7 @@
     "tabnine.experimentalAutoImports": true,
     "git.openRepositoryInParentFolders": "never",
     "notebook.lineNumbers": "on",
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "terminal.integrated.copyOnSelection": true
 }
