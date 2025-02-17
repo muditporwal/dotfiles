@@ -8,5 +8,3 @@ fi
 # 10 second wait if you do something that will delete everything. 
 setopt RM_STAR_WAIT
 
-### Load ASDF for installation and management of versions
-. /opt/asdf-vm/asdf.sh
