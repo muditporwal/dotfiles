@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x
+set -x
 # Check if the first argument is "download"
 if [[ "$1" == "download" ]]; then
     # Execute the download command with the provided arguments
@@ -13,7 +13,7 @@ if [[ "$1" == "download" ]]; then
 
   # Optional: Print the current directory to verify the change
   echo "Current directory: $(pwd)"
-  code . &
+  codium . &
 else
   # Call the exercism executable directly with the provided arguments
   /usr/bin/exercism "$@"
