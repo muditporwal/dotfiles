@@ -20,3 +20,6 @@ alias yu='sudo pacman -Sy $(pacman -Qq | grep headers) --needed && yaourt -Sua'
 
 # Chrome Keyring issue
 #alias rmkeyring='sudo mv /usr/bin/gnome-keyring-daemon /usr/bin/gnome-keyring-daemon-old ; sudo killall gnome-keyring-daemon'
+
+# Codium
+code=codium
